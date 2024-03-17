@@ -1,17 +1,17 @@
 from flask import Flask, render_template
-from forms import SignUpForm
+#from forms import SignUpForm
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "7V89?-_uPQkSLKss"
+#app.config["SECRET_KEY"] = "7V89?-_uPQkSLKss"
 
 @app.route("/")
 def home():
     return render_template("home.html",content="Home page")
 
-@app.route("/signup")
-def signup():
-    form = SignUpForm()
-    return render_template("signup.html", form=form)
+#@app.route("/signup")
+#def signup():
+#    form = SignUpForm()
+#    return render_template("signup.html", form=form)
 
 @app.route("/login")
 def login():
