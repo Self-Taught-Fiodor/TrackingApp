@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "TODO : HOME PAGE"
+    return render_template("home.html")
 
 @app.route("/login")
 def login():
@@ -25,3 +25,6 @@ def info():
 @app.route("/outputs")
 def outputs():
     return "TODO : OUTPUTS PAGE select time periode and get back tracked info"
+
+if __name__ == "__main__":
+    app.run(debug=True)
