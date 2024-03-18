@@ -31,7 +31,7 @@ def info():
 
 @app.route("/outputs")
 def outputs():
-    return render_template("outputs")
+    return render_template("outputs.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
