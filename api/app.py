@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for, request
 #from forms import SignUpForm
 
 app = Flask(__name__)
