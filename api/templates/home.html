@@ -1,7 +1,14 @@
 {% extends "base.html" %}
+{% block nav %}
+{% if show_nav %}
+    {% include 'navbar.html' %}
+{% endif %}
+{% endblock %}
 {% block title %}
 <h1>Home Page Under Construction</h1>
 {% endblock %}
+
 {% block content %}
-<h5>{{content}}</h5>
+
+
 {% endblock %}
