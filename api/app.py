@@ -6,11 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def redirect_landing():
-    return redirect("/workingonit")
-
-@app.route("/workingonit")
-def home():
-    return render_template("homeattempts.html", show_nav=True)
+    return redirect("/home")
 
 @app.route("/home")
 def home():
