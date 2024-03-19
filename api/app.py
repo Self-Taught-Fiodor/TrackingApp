@@ -4,6 +4,10 @@ from flask import Flask, render_template, redirect, url_for, request
 app = Flask(__name__)
 #app.config["SECRET_KEY"] = "7V89?-_uPQkSLKss"
 
+@app.route("/")
+def redirect_landing():
+    return redirect("/home")
+
 @app.route("/home")
 def home():
     return render_template("home.html", show_nav=True)
