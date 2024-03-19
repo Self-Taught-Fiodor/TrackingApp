@@ -10,7 +10,7 @@ def redirect_landing():
 
 @app.route("/home")
 def home():
-    return render_template("home.html", show_nav=True)
+    return render_template("home2.html", show_nav=True)
 
 #@app.route("/signup")
 #def signup():
