@@ -13,7 +13,7 @@ def home():
     return render_template("home.html", show_nav=True)
 
 @app.route("/hometry")
-def home():
+def hometry():
     return render_template("hometry.html", show_nav=True)
 
 #@app.route("/signup")
