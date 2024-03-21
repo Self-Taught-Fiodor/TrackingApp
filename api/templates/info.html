@@ -7,14 +7,13 @@
 
 {% block content %}
   <div class="container-fluid" style="height:15vh"></div>
-  <div class="container-fluid d-flex text-center">
-        <div class="list-group" style="flex:1">
+  <div class="container-fluid d-flex text-center overflow-hidden" id="TopButtonContainer">
+        <div class="list-group" style="flex:1" id="TopLeftButton_List">
           <a href="https://www.hubermanlab.com/newsletter/toolkit-for-sleep " class="list-group-item list-group-item-action list-group-item-light" aria-current="true" target="_blank">Sleep</a>
           <a href="https://www.hubermanlab.com/topics/light-exposure-and-circadian-rhythm" class="list-group-item list-group-item-action list-group-item-light" target="_blank">The Circadian Rhythm</a>
           <a href="https://www.hubermanlab.com/topics/sleep-hygiene" class="list-group-item list-group-item-action list-group-item-light" target="_blank">Sleep Quality</a>
         </div>
-      <div style="flex:1">
-        <div class="list-group">
+        <div class="list-group" style="flex:1" id="TopRightButton_List">
           <a href="https://www.youtube.com/watch?v=7FM9VAH_EXw&list=PLyqKj7LwU2RvpAB-HbJmkWXqaEIWJfA0K" class="list-group-item list-group-item-action list-group-item-success" aria-current="true" target="_blank">Nutrition made simple</a>
           <a href="https://www.youtube.com/watch?v=cSFZcmn1M88&list=PLyqKj7LwU2RvpAB-HbJmkWXqaEIWJfA0K&index=5" class="list-group-item list-group-item-action list-group-item-success" target="_blank">Hydration</a>
           <a href="https://www.hubermanlab.com/subtopics/fasting-and-meal-timing" class="list-group-item list-group-item-action list-group-item-success" target="_blank">Food Timing</a>
@@ -22,26 +21,21 @@
           <a href="https://www.youtube.com/watch?v=88z36xmf42Q&list=PLyqKj7LwU2Ru4UZgHYsjvHbRsV-qsewla" class="list-group-item list-group-item-action list-group-item-success" target="_blank">Muscle Gain Dieting</a>
           <a href="https://www.youtube.com/watch?v=KsdPQj_ElVc&list=PLyqKj7LwU2RtiRFzw7r0YpCQYy353JgYu" class="list-group-item list-group-item-action list-group-item-success" target="_blank">Nutrition Myths</a>
         </div>
-      </div>
   </div>
-  <div class="container-fluid d-flex">
-      <div style="flex:1">
-        <div class="list-group">
+  <div class="container-fluid d-flex text-center overflow-hidden">
+        <div class="list-group" style="flex:1" id="BottomLeftButton_List">
           <a href="https://www.hubermanlab.com/topics/fitness-and-recovery" class="list-group-item list-group-item-action list-group-item-danger" aria-current="true" target="_blank">Physical Activity</a>
           <a href="https://www.youtube.com/watch?v=YB8BaCtZjIs" class="list-group-item list-group-item-action list-group-item-danger" target="_blank">Cardio</a>
           <a href="https://www.youtube.com/watch?v=4cW0EmO12Lk&list=PLyqKj7LwU2RukxJbBHi9BtEuYYKm9UqQQ" class="list-group-item list-group-item-action list-group-item-danger" target="_blank">Resistance Training</a>
           <a href="https://www.hubermanlab.com/newsletter/stretching-protocols-to-increase-flexibility-and-support-general-health" class="list-group-item list-group-item-action list-group-item-danger" target="_blank">Stretching</a>
           <a href="https://www.youtube.com/watch?v=268xd2x7LnQ&list=PLyqKj7LwU2RugFpUzX0TlgOnnr8zhdrwf" class="list-group-item list-group-item-action list-group-item-danger" target="_blank">Stength Training Myths</a>
         </div>
-      </div>
-      <div style="flex:1">
-        <div class="list-group" >
+        <div class="list-group" style="flex:1" id="BottomRightButton_List">
           <a href="https://www.hubermanlab.com/topics/focus-productivity-and-creativity" class="list-group-item list-group-item-action list-group-item-info" aria-current="true" target="_blank">Mental Acuity</a>
           <a href="https://www.hubermanlab.com/topics/learning-and-memory" class="list-group-item list-group-item-action list-group-item-info" target="_blank">Learning and Memory</a>
           <a href="https://www.hubermanlab.com/topics/neuroplasticity-and-behavior-change" class="list-group-item list-group-item-action list-group-item-info" target="_blank">Behavior Change</a>
           <a href="https://www.hubermanlab.com/topics/the-science-of-wellbeing" class="list-group-item list-group-item-action list-group-item-info" target="_blank">Optimising Well-Being</a>
         </div>
-    </div>
   </div>
 
 {% endblock %}
