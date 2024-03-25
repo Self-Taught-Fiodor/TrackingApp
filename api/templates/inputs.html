@@ -5,7 +5,124 @@
 {% endif %}
 {% endblock %}
 {% block title %}TrackingApp Inputs{% endblock %}
+
 {% block content %}
 
+<div class="container" style="height: 10vh"></div>
 
+<h1 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif" title='"Steps" are a very practical overall physical activity indicator, providing insight into ones daily movement and health. However, it is a simplification, as for example, rowing will increase your step count.'>This is where you track your macros and daily "steps"</h1><br>
+
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+          <label for="CaloriesOfTheDay" class="form-label"><h4>Calories</h4></label>
+          <input type="number" class="input-Calories" id="DailyCalories" aria-describedby="calories">
+          <div><a href="https://www.youtube.com/watch?v=yb5xgU9zAFY" target="_blank">Body Weight In Pounds x 15  or Body Weight in Kg x 33 =  a guess of your calories needed to maintain &#x1F603 Pretty simple ! Need help knowing what to aim for depending on your situation ? Click me to figure it out !</a></div>
+        </div>
+        <div class="mb-3">
+            <label for="StepsOfTheDay" class="form-label"><h4>Steps</h4></label>
+            <input type="number" class="input-Steps" id="DailySteps" aria-describedby="steps">
+            <div><a href="https://www.youtube.com/watch?v=VNgfAzTO3xU" target="_blank">10 000 Steps a Day is a good minimum to aim for, click me for more details</a></div>
+          </div><br>
+        <div class="mb-3">
+          <h4>Optional Inputs, in gram</h4>
+          <h6>Personally i only track proteins and make sure to eat a balanced diet</h6>
+          <div><a href="https://www.youtube.com/watch?v=-jGVtY2XMlw" target="_blank">Click here for a 10 min video explaining what to aim for, this video is for people aiming to gain muscle mass and be near optimal, for general health it is not that strict</a></div><br>
+          <label for="ProteinOfTheDay" class="form-label"><h4>Proteins</h4></label>
+          <input type="number" class="input-Proteins" id="DailyProteins" aria-describedby="proteins">
+          <div id="ReminderProteins" class="form-text"><h6>1g per cm in height or 0,75 to 1 g per pound of body weight / 1,65 to 2,2 g per Kg is a good estimate</h6></div><br>
+          <label for="exampleInputPassword1" class="form-label"><h4>Fats</h4></label>
+          <input type="number" class="input-Fats" id="DailyFats" aria-describedby="fats">
+          <div id="ReminderFats" class="form-text"><h6>At LEAST 0,3 g per pound / 0,66 g per Kg, more is all good as long as you don't exceed daily calories or restrict protein and/or carb as a consequence</h6></div><br>
+          <label for="CarbsOfTheDay" class="form-label"><h4>Carbs</h4></label>
+          <input type="number" class="input-Carbs" id="DailyCarbs" aria-describedby="carbs">
+          <div id="ReminderCarbs" class="form-text"><h6>Make sure you feel good and have energy, if you don't you're probably eating too few calories in general, try adding carbs, it is very person to person dependant </h6></div><br>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button><br>
+        <div id="Reminder" class="form-text"><h3>Good job, tracking is needed in order to adapt and adapting is what life is all about, keep it up &#x1F5FF</h3></div>
+      </form>
+</div>
+<div class="container" style="height: 5vh"></div>
+<div class="container">
+  <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif">This past week : </h2><br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Days</th>
+        <th scope="col">Calories</th>
+        <th scope="col">Steps</th>
+        <th scope="col">Proteins</th>
+        <th scope="col">Fats</th>
+        <th scope="col">Carbs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Today</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-1</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-2</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-3</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-4</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-5</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-6</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+      <tr>
+        <th scope="row">-7</th>
+        <td>CalValue</td>
+        <td>StepValue</td>
+        <td>ProValue</td>
+        <td>FatValue</td>
+        <td>CarbValue</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 {% endblock %}

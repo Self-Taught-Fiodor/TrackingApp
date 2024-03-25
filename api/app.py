@@ -4,18 +4,22 @@ from flask import Flask, render_template, redirect, url_for, request
 app = Flask(__name__)
 #app.config["SECRET_KEY"] = "7V89?-_uPQkSLKss"
 
+if __name__ == "__main__":
+    app.run(debug=True)
+
 @app.route("/")
 def redirect_landing():
-    return redirect("/home")
+    return redirect("/home") #bcs i'm working on it today
 
 @app.route("/home")
 def home():
     return render_template("home.html", show_nav=True)
 
-#@app.route("/signup")
-#def signup():
-#    form = SignUpForm()
-#    return render_template("signup.html", form=form)
+@app.route("/signup")
+def signup():
+    return render_template("signup.html", show_nav=True)
+    #form = SignUpForm()
+    #return render_template("signup.html", form=form)
 
 @app.route("/login")
 def login():
@@ -36,6 +40,3 @@ def info():
 @app.route("/outputs")
 def outputs():
     return render_template("outputs.html", show_nav=True)
-
-if __name__ == "__main__":
-    app.run(debug=True)
